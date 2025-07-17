@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr. Siyabonga - Digital Card</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #bfa43a);
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 350px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .card h1 {
+      font-size: 1.6em;
+      margin: 0 0 10px;
+      color: gold;
+    }
+
+    .card h2 {
+      font-size: 1.1em;
+      font-weight: 400;
+      margin: 0 0 8px;
+      color: #ffd700;
+    }
+
+    .slogan {
+      font-size: 0.9em;
+      font-style: italic;
+      color: #fffad1;
+      margin-bottom: 15px;
+      animation: fadeInSlogan 2s ease;
+    }
+
+    .skills {
+      margin: 15px 0;
+      font-size: 0.95em;
+      color: #fffacd;
+    }
+
+    .contact {
+      margin-top: 15px;
+      font-size: 0.95em;
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+
+    .qr {
+      margin-top: 20px;
+    }
+
+    .qr a {
+      display: inline-block;
+      padding: 6px;
+      border-radius: 12px;
+      background-color: #000;
+      box-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px #fff200;
+      transition: box-shadow 0.4s ease;
+    }
+
+    .qr a:hover {
+      box-shadow: 0 0 20px #fff700, 0 0 30px #ffd700, 0 0 40px #ffea00;
+    }
+
+    .qr img {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      display: block;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInSlogan {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Mr Siyabonga</h1>
+    <h2>Web & App Developer</h2>
+    <div class="slogan">
+      “Transforming Ideas into Reality. Your Task Mastered.”
+    </div>
+    <div class="skills">
+      Skilled in: <br>
+      HTML, CSS, JavaScript, Python
+    </div>
+    <div class="contact">
+      <p>📱 WhatsApp: 064 212 2136</p>
+      <p>📧 Email: siyabongathomo.tpy@gmail.com</p>
+    </div>
+    <div class="qr">
+      <a href="https://yourwebsite.com" target="_blank">
+        <img src="qr-digitmarkt.png" alt="QR Code" />
+      </a>
+    </div>
+  </div>
+</body>
+</html>
